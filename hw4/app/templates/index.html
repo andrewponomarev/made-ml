@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Airbnb price prediction</title>
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="shortcut icon" href="/static/images/lstm.ico">
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      <center>Airbnb price prediction using Machine Learning</center>
+    </h1>
+
+    {% block content %}
+    <form method=post>
+
+      {{ form.name.label }}{{ form.name}}
+
+      {{ form.summary.label }} {{ form.summary }}
+
+      {{ form.space.label }} {{ form.space }}
+
+      {{ form.description.label }} {{ form.description }}
+
+      {{ form.neighborhood_overview.label }} {{ form.neighborhood_overview }}
+
+        <br>
+
+      {{ form.notes.label }} {{ form.notes }}
+
+      {{ form.transit.label }} {{ form.transit }}
+
+      {{ form.access.label }} {{ form.access }}
+
+      {{ form.house_rules.label }} {{ form.house_rules }}
+
+      {{ form.host_about.label }} {{ form.host_about }}
+
+        <br>
+
+      {{ form.host_response_time.label }} {{ form.host_response_time }}
+
+      {{ form.host_response_rate.label }} {{ form.host_response_rate }}
+
+        <br>
+
+      {{ form.host_is_superhost.label }} {{ form.host_is_superhost }}
+
+      {{ form.host_identity_verified.label }} {{ form.host_identity_verified }}
+
+        <br>
+
+      {{ form.neighbourhood_cleansed.label }} {{ form.neighbourhood_cleansed }}
+
+      {{ form.latitude.label }} {{ form.latitude }}
+
+      {{ form.longitude.label }} {{ form.longitude }}
+
+        <br>
+
+      {{ form.is_location_exact.label }} {{ form.is_location_exact }}
+
+      {{ form.bed_type.label }} {{ form.bed_type }}
+
+        <br>
+
+      {{ form.security_deposit.label }} {{ form.security_deposit }}
+
+      {{ form.cleaning_fee.label }} {{ form.cleaning_fee }}
+
+        <br>
+
+      {{ form.extra_people.label }} {{ form.extra_people }}
+
+      {{ form.minimum_nights.label }} {{ form.minimum_nights }}
+
+        <br>
+
+      {{ form.cancellation_policy.label }} {{ form.cancellation_policy }}
+
+      {{ form.require_guest_profile_picture.label }} {{ form.require_guest_profile_picture }}
+
+      {{ form.require_guest_phone_verification.label }} {{ form.require_guest_phone_verification }}
+
+      <p></p>
+      {{ form.submit }}
+    </form>
+    {% endblock %}
+
+  </div>
+</body>
+
+</html>
